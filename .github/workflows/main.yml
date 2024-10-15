@@ -1,7 +1,10 @@
 name: Apps Mobils iOS CD reusable
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+  # workflow_dispatch:
 
 jobs:
   ios-ci:
@@ -15,12 +18,7 @@ jobs:
         with:
          xcode-version: ${{ inputs.XCODE_VERSION }} 
 
-      - name: Fastlane Setup
-        run: |
-          cd iOS
-          bundle install
-          bundle update fastlane
-          bundle exec fastlane install_plugins
+
 
       - name: Get current date
         id: date
