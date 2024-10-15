@@ -18,7 +18,9 @@ jobs:
         with:
          xcode-version: ${{ inputs.XCODE_VERSION }} 
 
-
+         # ls project
+      - name: List project files
+        run: ls -la
 
       - name: Get current date
         id: date
