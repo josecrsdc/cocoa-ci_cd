@@ -23,7 +23,7 @@ jobs:
         run: ls -la
 
       - name: Install CocoaPods
-        run: sudo brew install cocoapods
+        run: brew install cocoapods
 
       - name: Install dependencies
         run: pod install
