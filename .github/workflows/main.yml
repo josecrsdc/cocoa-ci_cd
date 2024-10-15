@@ -25,6 +25,12 @@ jobs:
       - name: Install CocoaPods
         run: brew install cocoapods
 
+      - name: Update CocoaPods
+        run: pod repo update
+
+      - name: pod init
+        run: pod init
+
       - name: Install dependencies
         run: pod install
 
