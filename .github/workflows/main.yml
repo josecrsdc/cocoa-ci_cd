@@ -1,0 +1,31 @@
+name: Apps Mobils iOS CD reusable
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ios-ci:
+    runs-on: macos-latest
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+         xcode-version: ${{ inputs.XCODE_VERSION }} 
+
+      - name: Fastlane Setup
+        run: |
+          cd iOS
+          bundle install
+          bundle update fastlane
+          bundle exec fastlane install_plugins
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date +'%Y%m%d%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Get app version and build number
+        run: |
+          echo "App version"
