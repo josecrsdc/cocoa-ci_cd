@@ -12,19 +12,10 @@
 		DAA0BA4B2CBEA4790047FAEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0BA4A2CBEA4790047FAEC /* Assets.xcassets */; };
 		DAA0BA4E2CBEA4790047FAEC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0BA4D2CBEA4790047FAEC /* Preview Assets.xcassets */; };
 		DAA0BA582CBEA4790047FAEC /* cocoacicdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0BA572CBEA4790047FAEC /* cocoacicdTests.swift */; };
-		DAA0BA622CBEA4790047FAEC /* cocoacicdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0BA612CBEA4790047FAEC /* cocoacicdUITests.swift */; };
-		DAA0BA642CBEA4790047FAEC /* cocoacicdUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0BA632CBEA4790047FAEC /* cocoacicdUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DAA0BA542CBEA4790047FAEC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAA0BA3B2CBEA4770047FAEC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAA0BA422CBEA4770047FAEC;
-			remoteInfo = cocoacicd;
-		};
-		DAA0BA5E2CBEA4790047FAEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAA0BA3B2CBEA4770047FAEC /* Project object */;
 			proxyType = 1;
@@ -41,9 +32,6 @@
 		DAA0BA4D2CBEA4790047FAEC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAA0BA532CBEA4790047FAEC /* cocoacicdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoacicdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0BA572CBEA4790047FAEC /* cocoacicdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoacicdTests.swift; sourceTree = "<group>"; };
-		DAA0BA5D2CBEA4790047FAEC /* cocoacicdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoacicdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAA0BA612CBEA4790047FAEC /* cocoacicdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoacicdUITests.swift; sourceTree = "<group>"; };
-		DAA0BA632CBEA4790047FAEC /* cocoacicdUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cocoacicdUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +49,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAA0BA5A2CBEA4790047FAEC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +57,6 @@
 			children = (
 				DAA0BA452CBEA4770047FAEC /* cocoacicd */,
 				DAA0BA562CBEA4790047FAEC /* cocoacicdTests */,
-				DAA0BA602CBEA4790047FAEC /* cocoacicdUITests */,
 				DAA0BA442CBEA4770047FAEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +66,6 @@
 			children = (
 				DAA0BA432CBEA4770047FAEC /* cocoacicd.app */,
 				DAA0BA532CBEA4790047FAEC /* cocoacicdTests.xctest */,
-				DAA0BA5D2CBEA4790047FAEC /* cocoacicdUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,15 +95,6 @@
 				DAA0BA572CBEA4790047FAEC /* cocoacicdTests.swift */,
 			);
 			path = cocoacicdTests;
-			sourceTree = "<group>";
-		};
-		DAA0BA602CBEA4790047FAEC /* cocoacicdUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DAA0BA612CBEA4790047FAEC /* cocoacicdUITests.swift */,
-				DAA0BA632CBEA4790047FAEC /* cocoacicdUITestsLaunchTests.swift */,
-			);
-			path = cocoacicdUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +135,6 @@
 			productReference = DAA0BA532CBEA4790047FAEC /* cocoacicdTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DAA0BA5C2CBEA4790047FAEC /* cocoacicdUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DAA0BA6D2CBEA4790047FAEC /* Build configuration list for PBXNativeTarget "cocoacicdUITests" */;
-			buildPhases = (
-				DAA0BA592CBEA4790047FAEC /* Sources */,
-				DAA0BA5A2CBEA4790047FAEC /* Frameworks */,
-				DAA0BA5B2CBEA4790047FAEC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DAA0BA5F2CBEA4790047FAEC /* PBXTargetDependency */,
-			);
-			name = cocoacicdUITests;
-			productName = cocoacicdUITests;
-			productReference = DAA0BA5D2CBEA4790047FAEC /* cocoacicdUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +149,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					DAA0BA522CBEA4790047FAEC = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = DAA0BA422CBEA4770047FAEC;
-					};
-					DAA0BA5C2CBEA4790047FAEC = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = DAA0BA422CBEA4770047FAEC;
 					};
@@ -221,7 +169,6 @@
 			targets = (
 				DAA0BA422CBEA4770047FAEC /* cocoacicd */,
 				DAA0BA522CBEA4790047FAEC /* cocoacicdTests */,
-				DAA0BA5C2CBEA4790047FAEC /* cocoacicdUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,13 +184,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DAA0BA512CBEA4790047FAEC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAA0BA5B2CBEA4790047FAEC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,15 +210,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAA0BA592CBEA4790047FAEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAA0BA622CBEA4790047FAEC /* cocoacicdUITests.swift in Sources */,
-				DAA0BA642CBEA4790047FAEC /* cocoacicdUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +217,6 @@
 			isa = PBXTargetDependency;
 			target = DAA0BA422CBEA4770047FAEC /* cocoacicd */;
 			targetProxy = DAA0BA542CBEA4790047FAEC /* PBXContainerItemProxy */;
-		};
-		DAA0BA5F2CBEA4790047FAEC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAA0BA422CBEA4770047FAEC /* cocoacicd */;
-			targetProxy = DAA0BA5E2CBEA4790047FAEC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -347,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -430,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4Z9846KT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jcrsdc.cocoacicdTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -501,7 +429,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4Z9846KT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jcrsdc.cocoacicdTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,42 +437,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cocoacicd.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/cocoacicd";
-			};
-			name = Release;
-		};
-		DAA0BA6E2CBEA4790047FAEC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4Z9846KT7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jcrsdc.cocoacicdUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = cocoacicd;
-			};
-			name = Debug;
-		};
-		DAA0BA6F2CBEA4790047FAEC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M4Z9846KT7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jcrsdc.cocoacicdUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = cocoacicd;
 			};
 			name = Release;
 		};
@@ -574,15 +466,6 @@
 			buildConfigurations = (
 				DAA0BA6B2CBEA4790047FAEC /* Debug */,
 				DAA0BA6C2CBEA4790047FAEC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DAA0BA6D2CBEA4790047FAEC /* Build configuration list for PBXNativeTarget "cocoacicdUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DAA0BA6E2CBEA4790047FAEC /* Debug */,
-				DAA0BA6F2CBEA4790047FAEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
